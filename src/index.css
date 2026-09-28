@@ -1,0 +1,110 @@
+:root {
+  --bg: #faf1de;              /* vanilla background */
+  --bg-panel: #f3e4c6;        /* card/panel background */
+  --bg-panel-raised: #ecd8b0;
+  --text-primary: #2c1b0e;    /* dark espresso text */
+  --text-secondary: #6b5643;
+  --text-dim: #9c8768;
+  --accent-amber: #bf5b04;    /* burnt orange */
+  --accent-cyan: #8c3b12;     /* rust — links, hover */
+  --accent-green: #6b7f1f;
+  --rule: rgba(44, 27, 14, 0.12);
+  --rule-strong: rgba(44, 27, 14, 0.22);
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --max-width: 1040px;
+  --gutter: clamp(20px, 5vw, 64px);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image:
+  radial-gradient(ellipse 80% 50% at 50% -10%, rgba(191, 91, 4, 0.06), transparent),
+  radial-gradient(ellipse 60% 40% at 90% 10%, rgba(140, 59, 18, 0.05), transparent);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(191, 91, 4, 0.22);
+  color: var(--text-primary);
+}

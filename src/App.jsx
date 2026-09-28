@@ -1,0 +1,30 @@
+import './App.css'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import StatusBar from './components/StatusBar'
+import About from './components/About'
+import Skills from './components/Skills'
+import Experience from './components/Experience'
+import Certifications from './components/Certifications'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+function App() {
+  return (
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <StatusBar />
+        <About />
+        <Skills />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export default App
