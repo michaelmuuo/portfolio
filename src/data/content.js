@@ -13,35 +13,6 @@ export const profile = {
   availability: 'Open to opportunities',
 }
 
-// Hops rendered in the hero traceroute. Order matters — it reads top to bottom
-// the way a real traceroute does, tracing the path to where Michael is today.
-export const traceHops = [
-  {
-    host: 'kenyatta-university.edu',
-    detail: 'BSc Information Technology · Upper Second Class Honours · Dec 2023',
-  },
-  {
-    host: 'pdtp.icta.go.ke',
-    detail: 'Presidential Digital Talent Program, ICT Authority · Jan–Dec 2025',
-  },
-  {
-    host: 'ccna.cisco.com',
-    detail: 'CCNA · CyberOps Associate · DevNet Associate',
-  },
-  {
-    host: 'huawei.hcia-datacom',
-    detail: 'Huawei Certified ICT Associate — Datacom',
-  },
-  {
-    host: 'linuxfoundation.org',
-    detail: 'Linux Foundation Certified',
-  },
-  {
-    host: 'michael-muuo.dev',
-    detail: 'connection established',
-    final: true,
-  },
-]
 
 export const statusRows = [
   { name: 'Location', status: 'up', detail: 'Nairobi, Kenya' },

@@ -65,5 +65,4 @@ src/
 - Respects `prefers-reduced-motion` (terminal animation skips straight to
   the final state)
 - Visible keyboard focus states on all links and buttons
-- The animated terminal has an `aria-label` summarizing its content for
-  screen readers
+
