@@ -1,49 +1,10 @@
-import { useEffect, useState } from 'react'
-import { profile, traceHops } from '../data/content'
-
-const HOP_DELAY_MS = 260
+import { profile } from '../data/content'
 
 export default function Hero() {
-  const [visibleHops, setVisibleHops] = useState(0)
-  const [revealSummary, setRevealSummary] = useState(false)
-
-  useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches
-
-    if (prefersReducedMotion) {
-      setVisibleHops(traceHops.length)
-      setRevealSummary(true)
-      return
-    }
-
-    let cancelled = false
-    let i = 0
-
-    const tick = () => {
-      if (cancelled) return
-      i += 1
-      setVisibleHops(i)
-      if (i >= traceHops.length) {
-        setTimeout(() => !cancelled && setRevealSummary(true), 300)
-        return
-      }
-      setTimeout(tick, HOP_DELAY_MS)
-    }
-
-    const start = setTimeout(tick, 500)
-    return () => {
-      cancelled = true
-      clearTimeout(start)
-    }
-  }, [])
-
   return (
     <section className="hero" id="top">
       <div className="hero__inner">
-        
-        <div className={revealSummary ? 'hero__summary hero__summary--visible' : 'hero__summary'}>
+        <div className="hero__summary hero__summary--visible">
           <p className="eyebrow mono">{profile.availability}</p>
           <h1 className="hero__name">{profile.name}</h1>
           <p className="hero__title">{profile.title}</p>
