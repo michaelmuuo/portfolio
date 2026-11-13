@@ -6,8 +6,8 @@ export const profile = {
   location: 'Nairobi, Kenya',
   tagline:
     'I design, secure, and support systems that keep organizations connected.',
-  email: 'your.email@example.com', 
-  linkedin: 'https://linkedin.com/in/your-handle', 
+  email: 'michaelmuuo912@gmail.com', 
+  linkedin: 'https://www.linkedin.com/in/michael-muuo-2684a93b1/', 
   github: 'https://github.com/your-handle', 
   resumeUrl: '#', 
   availability: 'Open to opportunities',

@@ -1,3 +1,4 @@
+
 import { profile } from '../data/content'
 
 export default function Hero() {
@@ -14,11 +15,6 @@ export default function Hero() {
             <a className="btn btn--ghost" href="#certifications">View certifications</a>
           </div>
         </div>
-        <img
-          src="/passport.png"
-          alt={profile.name}
-          className="hero__photo"
-        />
       </div>
     </section>
   )

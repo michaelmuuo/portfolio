@@ -6,7 +6,7 @@ export default function Certifications() {
       <h2 className="section__title">Certifications</h2>
       <ul className="certs">
         {certifications.map((cert) => (
-          <li className="certs__item" key={cert.code}>
+          <li className="certs__item" key={cert.name}>
             <img
           className="certs__logo"
           src={issuerLogos[cert.issuer]}
