@@ -1,69 +1,85 @@
-// Edit this file to update the site's content — nothing else needs to change.
+
 
 export const profile = {
   name: 'Michael Muuo John',
   title: 'Information Technology Professional',
   location: 'Nairobi, Kenya',
   tagline:
-    'I design, secure, and support IT systems that keep organizations connected — from routing and VPNs to endpoint security and SIEM monitoring.',
-  email: 'your.email@example.com', // TODO: replace with real contact email
-  linkedin: 'https://linkedin.com/in/your-handle', // TODO
-  github: 'https://github.com/your-handle', // TODO
-  resumeUrl: '#', // TODO: link to a hosted PDF resume
+    'I design, secure, and support systems that keep organizations connected.',
+  email: 'your.email@example.com', 
+  linkedin: 'https://linkedin.com/in/your-handle', 
+  github: 'https://github.com/your-handle', 
+  resumeUrl: '#', 
   availability: 'Open to opportunities',
 }
 
 
-export const statusRows = [
-  { name: 'Location', status: 'up', detail: 'Nairobi, Kenya' },
-  { name: 'Focus', status: 'up', detail: 'Network Infrastructure & Security' },
-  { name: 'Availability', status: 'up', detail: 'Open to opportunities' },
-]
 
-export const about = `Michael holds a Bachelor of Science in Information Technology from Kenyatta University, graduating with Upper Second Class Honours in December 2023. He completed the Presidential Digital Talent Program with the ICT Authority, based at the State Department for Livestock Development, where he spent a year supporting networking and ICT infrastructure for a government agency in production. His work sits at the intersection of networking, endpoint security, and monitoring — the practical layer that keeps systems reachable, protected, and observable.`
+
+export const about = `IT professional with hands-on experience supporting enterprise networks, endpoint security, databases, and ICT 
+infrastructure across a 200+ device environment. Cisco CCNA-certified across Networking, Security, and Automation 
+tracks, with additional credentials in CyberOps, DevNet, and Datacom, plus working knowledge of SQL Server. Proven track record maintaining 90%+ network uptime and delivering 100% device connectivity on a national 
+government network migration. Seeking to bring strong troubleshooting, monitoring, and infrastructure support skills 
+to a growing IT team.`
 
 export const skillGroups = [
+  
+  {
+    label: 'Software Development',
+    items: ['Full Stack Web Development', 'Git & Version Control', 'Node.js','ASP.NET Core C#', 'React.js'],
+  },
+  
   {
     label: 'Networking',
-    items: ['Routing & Switching', 'VPN Technologies', 'ICT Infrastructure Support', 'Network Troubleshooting'],
+    items: ['Routing & Switching', 'VPN Technologies', 'Network Infrastructure Support','Network cabling and configuration', 'Network Troubleshooting'],
   },
   {
     label: 'Security',
-    items: ['Endpoint Security', 'SIEM Tools', 'Security Operations Basics'],
+    items: ['Endpoint Security', 'SIEM Tools', 'Anti-Malware agents deployment'],
   },
   {
     label: 'Platforms',
-    items: ['Linux Administration', 'Cisco IOS', 'Huawei Datacom'],
+    items: ['Linux Administration', 'Cisco IOS', 'Huawei Versatile Routing Platform'],
   },
 ]
 
+export const issuerLogos = {
+  Cisco: '/logos/cisco-logo.svg',
+  Huawei: '/logos/huawei-logo.svg',
+}
+
 export const certifications = [
-  { name: 'CCNA', issuer: 'Cisco', code: 'CCNA-TRACK' },
-  { name: 'CyberOps Associate', issuer: 'Cisco', code: 'CBROPS' },
-  { name: 'DevNet Associate', issuer: 'Cisco', code: 'DEVASC' },
-  { name: 'HCIA-Datacom', issuer: 'Huawei', code: 'HCIA-DC' },
-  { name: 'Linux Foundation Certifications', issuer: 'Linux Foundation', code: 'LF-CERT' },
+  { name: 'CCNA (Introduction to Networks)', issuer: 'Cisco', url:'/certificates/ccna-intro-to-networks.pdf' },
+  { name: 'CCNA (Switching, Routing and Wireless essentials)', issuer: 'Cisco', url:'/certificates/ccna-switching-routing-wireless.pdf' },
+  { name: 'CCNA (Enterprise Networking and Automation)', issuer: 'Cisco', url:'/certificates/ccna-enterprise-networking-automation.pdf' },
+  { name: 'CyberOps Associate', issuer: 'Cisco', url:'/certificates/cyberops-associate.pdf'},
+  { name: 'DevNet Associate', issuer: 'Cisco', url:'/certificates/devnet-associate.pdf'},
+  { name: 'HCIA-Datacom', issuer: 'Huawei', url:'/certificates/hcia-datacom.pdf' },
 ]
+
 
 export const experience = [
   {
-    role: 'ICT Intern — Presidential Digital Talent Program',
-    org: 'ICT Authority, at the State Department for Livestock Development',
+    role: 'Intern — Presidential Digital Talent Program',
+    org: 'ICT Authority, deployed at the State Department for Livestock Development',
     period: 'Jan 2025 – Dec 2025',
     points: [
-      'Supported networking and ICT infrastructure for a government department in daily production use.',
-      'Worked hands-on with routing, VPN connectivity, endpoint security, and monitoring tools.',
-      'Provided infrastructure support as part of a national digital talent placement program.',
-    ],
+              'Monitored the Local Area Network infrastructure, maintaining 90% uptime across the department.',
+              'Supported 200+ endpoints including desktops, laptops, servers, routers, switches, access points, printers, and smartphones.',
+              'Led connection of the Directorate of Livestock Production to the Government Common Core Network (GCCN), achieving 100% device connectivity.',
+              'Cut recurring system crashes by implementing a regular software update and inspection routine.',
+              'Enabled 100% digital support for departmental meetings, integrating online collaboration and presentation tools.',
+              'Collaborated with third-party organizations to develop software solutions for the Directorate of Livestock Production.',
+            ],
   },
 ]
 
 export const education = [
   {
-    school: 'Kenyatta University',
+    
     program: 'B.Sc. Information Technology',
-    period: 'Graduated Dec 2023',
-    detail: 'Upper Second Class Honours',
+    period: 'Dec 2023',
+
   },
 ]
 

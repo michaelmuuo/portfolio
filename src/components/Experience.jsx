@@ -30,7 +30,7 @@ export default function Experience() {
             <div className="timeline__content">
               <p className="timeline__period mono">{ed.period}</p>
               <h3 className="timeline__role">{ed.program}</h3>
-              <p className="timeline__org">{ed.school} — {ed.detail}</p>
+              
             </div>
           </div>
         ))}

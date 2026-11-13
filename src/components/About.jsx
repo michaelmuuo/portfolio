@@ -7,7 +7,7 @@ export default function About() {
       <div className="about">
         <p className="about__body">{about}</p>
         <div className="about__memberships">
-          <p className="eyebrow mono">Memberships</p>
+          <p className="eyebrow mono">Professional bodies Memberships</p>
           <ul>
             {memberships.map((m) => (
               <li key={m}>{m}</li>

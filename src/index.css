@@ -1,7 +1,7 @@
 :root {
-  --bg: #faf1de;              /* vanilla background */
-  --bg-panel: #f3e4c6;        /* card/panel background */
-  --bg-panel-raised: #ecd8b0;
+  --bg: #ffffff;              /*  background */
+  --bg-panel: #F4F1EA;        /* card/panel background */
+  --bg-panel-raised: #E8DCC4;
   --text-primary: #2c1b0e;    /* dark espresso text */
   --text-secondary: #6b5643;
   --text-dim: #9c8768;
@@ -15,8 +15,8 @@
   --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
 
-  --max-width: 1040px;
-  --gutter: clamp(20px, 5vw, 64px);
+  --max-width: 1200px;                    /* was 1040px: content fills more of the screen */
+  --gutter: clamp(16px, 3vw, 32px);       /* was clamp(20px, 5vw, 64px): less side padding */
 
   color-scheme: light;
 }

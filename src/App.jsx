@@ -1,7 +1,6 @@
 import './App.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import StatusBar from './components/StatusBar'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
@@ -15,7 +14,6 @@ function App() {
       <Nav />
       <main>
         <Hero />
-        <StatusBar />
         <About />
         <Skills />
         <Experience />
