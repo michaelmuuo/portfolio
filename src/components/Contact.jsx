@@ -12,7 +12,15 @@ export default function Contact() {
         <div className="contact__links">
           <a className="btn btn--primary" href={`mailto:${profile.email}`}>Email me</a>
           <a className="btn btn--ghost" href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          <a className="btn btn--ghost" href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
+          <button
+            type="button"
+            className="btn btn--ghost btn--disabled"
+            disabled
+            aria-disabled="true"
+            title="GitHub coming soon"
+          >
+            GitHub
+          </button>
         </div>
       </div>
     </section>

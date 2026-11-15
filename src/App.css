@@ -444,3 +444,11 @@
   color: #FFFF;
   font-size: 1.0rem;
 }
+.btn--disabled,
+.btn--disabled:hover {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;   /* no hover/click effects */
+  transform: none;
+  box-shadow: none;
+}
