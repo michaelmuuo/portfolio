@@ -16,9 +16,9 @@ export const profile = {
 
 
 
-export const about = `IT professional with hands-on experience supporting enterprise networks, endpoint security, databases, and ICT 
+export const about = `I am an IT professional with hands-on experience supporting enterprise networks, endpoint security, databases, and ICT 
 infrastructure across a 200+ device environment. Cisco CCNA-certified across Networking, Security, and Automation 
-tracks, with additional credentials in CyberOps, DevNet, and Datacom, plus working knowledge of SQL Server. Proven track record maintaining 90%+ network uptime and delivering 100% device connectivity on a national 
+tracks, with additional credentials in CyberOps, DevNet, and Datacom. Proven track record maintaining 90%+ network uptime and delivering 100% device connectivity on a national 
 government network migration. Seeking to bring strong troubleshooting, monitoring, and infrastructure support skills 
 to a growing IT team.`
 
