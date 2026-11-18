@@ -3,6 +3,7 @@ import {
   LuUser,
   LuCode,
   LuBriefcase,
+  LuFolderGit2,
   LuAward,
   LuMail,
   LuMenu,
@@ -14,6 +15,7 @@ const links = [
   { href: '#skills', label: 'Skills', icon: LuCode },
   { href: '#experience', label: 'Experience', icon: LuBriefcase },
   { href: '#certifications', label: 'Certifications', icon: LuAward },
+  { href: '#projects', label: 'Projects', icon: LuFolderGit2 },
   { href: '#contact', label: 'Contact', icon: LuMail },
 ]
 

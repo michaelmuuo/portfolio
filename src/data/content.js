@@ -88,3 +88,44 @@ export const memberships = [
   'Association of Computing Practitioners – Kenya',
   'Internet Society – Kenya Chapter',
 ]
+
+export const projects = [
+  {
+    title: 'EPL 26/27 Live Title Race Tracker',
+    status: 'In progress',
+    tagline: 'A Premier League dashboard that updates itself after every matchweek.',
+    valueProposition:
+      "Most football dashboards only show today's table. This one saves a snapshot every week, so it shows the story of the title race: who is climbing, who is fading, and who is on pace to win it. It keeps updating through the 2026/27 season with no manual work, so there is a fresh reason to come back every week.",
+    pipeline: ['football-data.org API', 'Vercel Cron', 'Supabase', 'Dashboard'],
+    features: [
+      {
+        name: 'Title Race Chart',
+        description:
+          'Animated line chart of points against matchweek for the top 5, with teams you can toggle on and off. It grows automatically every week.',
+      },
+      {
+        name: 'Form & Momentum',
+        description:
+          'Bump chart of league position changes, last-5 form strips (W/W/D/L/W), and an auto-calculated "Biggest Mover This Week" card.',
+      },
+      {
+        name: 'Who Wins It? Predictor',
+        description:
+          'Projected final points = current points + (points per game × games left). Simple, transparent maths with no black-box AI, refreshed after every update.',
+      },
+      {
+        name: 'Golden Boot Race',
+        description:
+          'Weekly-updating bar chart of the top scorers, pulled from the competition scorers endpoint.',
+      },
+    ],
+    highlights: [
+      'Scheduled data pipeline: a weekly cron job fetches standings and writes a new snapshot instead of overwriting old data.',
+      'Historical standings_history table (matchweek, team, points, position, goals for/against) powers every chart.',
+      'Runs hands-free for the rest of the 38-matchweek season (Aug 2026 – May 2027).',
+    ],
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'Vercel Cron', 'football-data.org API', 'Data Visualization'],
+    liveUrl: null, // set when deployed
+    repoUrl: null, // e.g. 'https://github.com/your-handle/epl-tracker'
+  },
+]
