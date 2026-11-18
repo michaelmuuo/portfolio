@@ -23,9 +23,7 @@ export default function Projects() {
           <article className="project" key={p.title}>
             <header className="project__header">
               <h3 className="project__title">
-                <span className="wip wip--inline" aria-label="In progress">
-                  <WipIcon />
-                </span>
+                
                 {p.title}
               </h3>
               <span className="project__status">
