@@ -3,7 +3,7 @@ import { certifications, issuerLogos  } from '../data/content'
 export default function Certifications() {
   return (
     <section className="section" id="certifications">
-      <h2 className="section__title">Certifications</h2>
+      <h2 className="section__title">Certifications & Trainings</h2>
       <ul className="certs">
         {certifications.map((cert) => (
           <li className="certs__item" key={cert.name}>

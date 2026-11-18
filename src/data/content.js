@@ -55,6 +55,7 @@ export const certifications = [
   { name: 'CyberOps Associate', issuer: 'Cisco', url:'/certificates/cyberops-associate.pdf'},
   { name: 'DevNet Associate', issuer: 'Cisco', url:'/certificates/devnet-associate.pdf'},
   { name: 'HCIA-Datacom', issuer: 'Huawei', url:'/certificates/hcia-datacom.pdf' },
+  { name: 'HCIA-Training', issuer: 'Huawei', url:'/certificates/HCIA_Certificate of participation_Michael Muuo.pdf' },
 ]
 
 
