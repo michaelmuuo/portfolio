@@ -647,13 +647,49 @@
         /* ---------- footer ---------- */
 
         .footer {
-          max-width: var(--max-width);
-          margin: 56px auto 0;
-          padding: 24px var(--gutter) 40px;
-          background: #3d7774;
-          color: #FFFF;
-          font-size: 1.0rem;
-        }
+  max-width: var(--max-width);
+  margin: 56px auto 0;
+  padding: 24px var(--gutter) 40px;
+  background: #3d7774;
+  color: #FFFF;
+  font-size: 1.0rem;
+}
+
+      .footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.footer__social a:hover {
+  background: #fff;
+  color: #3d7774;
+  transform: translateY(-2px);
+}
         .btn--disabled,
         .btn--disabled:hover {
           opacity: 0.4;

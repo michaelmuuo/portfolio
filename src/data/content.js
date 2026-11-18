@@ -9,6 +9,8 @@ export const profile = {
   email: 'michaelmuuo912@gmail.com', 
   linkedin: 'https://www.linkedin.com/in/michael-muuo-2684a93b1/', 
   github: 'https://github.com/your-handle', 
+  whatsapp: 'https://wa.me/254741476274', 
+  credly: 'https://www.credly.com/users/michael-john.6865f28f',
   resumeUrl: '#', 
   availability: 'Open to opportunities',
 }
